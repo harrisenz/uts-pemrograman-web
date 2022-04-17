@@ -1,0 +1,33 @@
+membuat table komik
+
+CREATE TABLE `id18792720_ci4`.`komik` ( `id` INT NOT NULL AUTO_INCREMENT , `judul` VARCHAR(255) NOT NULL , `slug` VARCHAR(255) NOT NULL , `penulis` VARCHAR(255) NOT NULL , `penerbit` VARCHAR(255) NOT NULL , `sampul` VARCHAR(255) NOT NULL , `created_at` INT NULL , `updated_at` INT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+
+insert table komik
+INSERT INTO `komik` (`id`, `judul`, `slug`, `penulis`, `penerbit`, `sampul`, `created_at`, `updated_at`) VALUES (NULL, 'Naruto', 'naruto', 'masashi kishimoyo', 'shonen jump', 'naruto.jpg', NULL, NULL), (NULL, 'One Piece', 'one-piece', 'eichiro oda', 'gramedia', 'onepiece.jpg', NULL, NULL), (NULL, 'Black Clover', 'black clover', 'yuki tabata', 'gramedia', 'black.jfif', NULL, NULL)
+
+
+membuat table am
+CREATE TABLE `id18792720_ci4`.`tb_am` ( `am_id` INT NOT NULL AUTO_INCREMENT , `am_detail` VARCHAR(255) NOT NULL , PRIMARY KEY (`am_id`)) ENGINE = InnoDB;
+
+insert table am
+INSERT INTO `tb_am` (`am_id`, `am_detail`) VALUES (NULL, 'salam kenal!\r\naku Haris Ristu Sendang,aku tinggal di bandung saat ini aku adalah mahasiswa semester 4 teknik informatika di universitas muhammadiyah.\r\nuntuk mengetahui lebih lanjut boleh liat di bawah yaa di sana terdapat hobi, pendidikan dan skill!\r\n')
+
+membuat tabel skill
+CREATE TABLE `id18792720_ci4`.`tb_skill` ( `skill_id` INT NOT NULL AUTO_INCREMENT , `skill_name` VARCHAR(255) NOT NULL , `skill_detail` VARCHAR(255) NOT NULL , PRIMARY KEY (`skill_id`)) ENGINE = InnoDB;
+
+membuat isert skill
+INSERT INTO `tb_skill` (`skill_id`, `skill_name`, `skill_detail`) VALUES (NULL, 'CSS', 'dengan css kita bisa menyederhanakan proses pembuatan website dengan mengatur elemen yang tertulis di bahasa markup. CSS dipakai untuk mendesain halaman depan atau tampilan website (front end).'), (NULL, 'UX UI DESIGNER', 'dengan belajar UI dan UX Designer UI (User Interface) kita bisa belajar proses menampilkan sebuah hasil dalam bentuk tampilan yang dapat dilihat oleh pengguna (user), atau bagian visual dari website,software, maupun hardware untuk user dapat berinteraksi.'), (NULL, 'HTML', 'dengan html kita bisa Membuat list atau penomoran dari sekumpulan hal.Menampilkan informasi dalam bentuk tabel. Membuat Sebuah link yang digunakanuntuk menuju dokument lain. Menambahkan object-object seperti image, audio,video dan juga java applet dalam d')
+
+membuat tabel edu
+CREATE TABLE `id18792720_ci4`.`tb_edu` ( `edu_id` INT NOT NULL AUTO_INCREMENT , `edu_name` INT NOT NULL , `edu_detail` INT NOT NULL , PRIMARY KEY (`edu_id`)) ENGINE = InnoDB;
+
+ALTER TABLE `tb_edu` CHANGE `edu_name` `edu_name` VARCHAR(255) NOT NULL, CHANGE `edu_detail` `edu_detail` VARCHAR(255) NOT NULL;
+
+inseet tb_edu
+INSERT INTO `tb_edu` (`edu_id`, `edu_name`, `edu_detail`) VALUES (NULL, 'universitas muhammadiyah sukabumi', 'Jl. R. Syamsudin, S.H. No. 50, Cikole, Kec. Cikole, Kota Sukabumi, Jawa Barat 43113'), (NULL, 'SMA CIPUTRA SURABAYA', 'jl. Puri Widya Kencana, Lidah Kulon, Kec. Lakarsantri, Kota SBY, Jawa Timur 60213, Indonesia');
+
+
+
+
+

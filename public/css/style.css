@@ -1,0 +1,55 @@
+.sampul {
+    width: 100px;
+}
+
+.table >tbody > tr > * {
+    vertical-align: middle;
+}
+
+/* ----- preloader ----- */
+.art-preloader {
+    margin: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100vw - 30px);
+    height: calc(100vh - 30px);
+    background: #20202a;
+    z-index: 999999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.art-preloader .art-preloader-content {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.art-preloader .art-preloader-content .art-preloader-load {
+    margin-top: 5px;
+    width: 200px;
+}
+
+.art-preloader .art-preloader-content .art-preloader-load .progressbar-text {
+    position: relative;
+    font-size: 14px;
+    font-weight: 400 !important;
+    color: #2424e9 !important;
+    height: 300px;
+    line-height: 350px;
+}
+
+.art-preloader-load path:first-child {
+    stroke: #fd0000;
+}
+
+.art-preloader-load path:last-child {
+    stroke: #FFC107;
+}
